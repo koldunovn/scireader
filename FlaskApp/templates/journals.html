@@ -1,0 +1,19 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="list-group">
+  
+    {% for journal in journals %}
+        <a href="{{ journal.rss }}" class="list-group-item">
+        <h4 class="list-group-item-heading">{{ journal.name }}</h4>
+        <p class="list-group-item-text">{{ journal.name }}</p>
+       </a>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
+
+

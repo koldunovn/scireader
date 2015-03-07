@@ -63,7 +63,19 @@ def climate_sensitivity():
                            posts=posts,
                            pname=pname)
 
+@app.route('/journals')
+def journals():
 
+    ifile =open(os.path.join(APP_ROOT,'static','journal_list.json'))
+    journals = json.load(ifile)
+    ifile.close()
+    pname = 'journals'
+
+    return render_template('journals.html',
+                           title='List of journals',
+                           user='Nikolay',
+                           journals=journals,
+                           pname=pname)
 
 #@app.route('/')
 #def homepage():

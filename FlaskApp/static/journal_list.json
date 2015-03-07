@@ -1,0 +1,130 @@
+[
+{
+"name": "Journal of Geophysical Research: Oceans", 
+"rss": "http://onlinelibrary.wiley.com/rss/journal/10.1002/%28ISSN%292169-9291"
+}, 
+{
+"name": "Geophysical Research Letters", 
+"rss": "http://onlinelibrary.wiley.com/rss/journal/10.1002/%28ISSN%291944-8007"
+}, 
+{
+"name": "Journal of Geophysical Research: Atmospheres", 
+"rss": "http://onlinelibrary.wiley.com/rss/journal/10.1002/%28ISSN%292169-8996"
+}, 
+{
+"name": "Reviews of Geophysics", 
+"rss": "http://onlinelibrary.wiley.com/rss/journal/10.1002/%28ISSN%291944-9208"
+}, 
+{
+"name": "BAMS", 
+"rss": "http://journals.ametsoc.org/action/showFeed?type=etoc&feed=rss&jc=bams"
+}, 
+{
+"name": "Journal of Applied Meteorology and Climatology", 
+"rss": "http://journals.ametsoc.org/action/showFeed?type=etoc&feed=rss&jc=apme"
+}, 
+{
+"name": "Journal of Climate", 
+"rss": "http://journals.ametsoc.org/action/showFeed?type=etoc&feed=rss&jc=clim"
+}, 
+{
+"name": "Journal of Hydrometeorology", 
+"rss": "http://journals.ametsoc.org/action/showFeed?type=etoc&feed=rss&jc=hydr"
+}, 
+{
+"name": "Journal of Physical Oceanography", 
+"rss": "http://journals.ametsoc.org/action/showFeed?type=etoc&feed=rss&jc=phoc"
+}, 
+{
+"name": "Journal of the Atmospheric Sciences", 
+"rss": "http://journals.ametsoc.org/action/showFeed?type=etoc&feed=rss&jc=atsc"
+}, 
+{
+"name": "Monthly Weather Review", 
+"rss": "http://journals.ametsoc.org/action/showFeed?type=etoc&feed=rss&jc=mwr"
+}, 
+{
+"name": "Ocean Science Discussions", 
+"rss": "http://www.ocean-sci-discuss.net/xml/rss2_0.xml"
+}, 
+{
+"name": "Ocean Science", 
+"rss": "http://www.ocean-sci.net/xml/rss2_0.xml"
+}, 
+{
+"name": "Atmospheric Chemistry and Physics Discussions", 
+"rss": "http://www.atmos-chem-phys-discuss.net/xml/rss2_0.xm"
+}, 
+{
+"name": "Atmospheric Chemistry and Physics", 
+"rss": "http://www.atmos-chem-phys.net/xml/rss2_0.xml"
+}, 
+{
+"name": "Earth System Dynamics Disc", 
+"rss": "http://www.earth-syst-dynam-discuss.net/xml/rss2_0.xml"
+}, 
+{
+"name": "Earth System Dynamics", 
+"rss": "http://www.earth-syst-dynam.net/xml/rss2_0.xm"
+}, 
+{
+"name": "The Cryosphere Discussions", 
+"rss": "http://www.the-cryosphere-discuss.net/xml/rss2_0.xml"
+}, 
+{
+"name": "The Cryosphere", 
+"rss": "http://www.the-cryosphere.net/xml/rss2_0.xml"
+}, 
+{
+"name": "Nature", 
+"rss": "http://feeds.nature.com/nature/rss/aop"
+}, 
+{
+"name": "Nature Geoscience", 
+"rss": "http://feeds.nature.com/ngeo/rss/aop"
+}, 
+{
+"name": "Nature Climate Change", 
+"rss": "http://feeds.nature.com/nclimate/rss/aop"
+}, 
+{
+"name": "Science", 
+"rss": "http://www.sciencemag.org/rss/current.xml"
+}, 
+{
+"name": "Continental Shelf Research", 
+"rss": "http://rss.sciencedirect.com/publication/science/02784343"
+}, 
+{
+"name": "Deep Sea Research P I", 
+"rss": "http://rss.sciencedirect.com/publication/science/09670637"
+}, 
+{
+"name": "Deep Sea Research P II", 
+"rss": "http://rss.sciencedirect.com/publication/science/09670645"
+}, 
+{
+"name": "Ocean Modelling", 
+"rss": "http://rss.sciencedirect.com/publication/science/1463500"
+}, 
+{
+"name": "Progress in Oceanography", 
+"rss": "http://rss.sciencedirect.com/publication/science/00796611"
+}, 
+{
+"name": "Earth and Planetary Science Letters", 
+"rss": "http://rss.sciencedirect.com/publication/science/0012821X"
+}, 
+{
+"name": "Climate Dynamics", 
+"rss": "http://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=382&channel-name=Climate+Dynamics"
+}, 
+{
+"name": "Ocean Dynamics", 
+"rss": "http://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=10236&channel-name=Ocean+Dynamics"
+}, 
+{
+"name": "Climatic Change", 
+"rss": "http://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=10584&channel-name=Climatic+Change"
+}
+]
