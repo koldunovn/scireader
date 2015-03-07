@@ -11,7 +11,7 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 @app.route('/index')
 def index():
     
-    ifile =open(os.path.join(APP_ROOT,'sea_ice.json'))
+    ifile =open(os.path.join(APP_ROOT,'static', 'sea_ice.json'))
     posts = json.load(ifile)
     ifile.close()
     pname = 'sea_ice'
@@ -24,7 +24,7 @@ def index():
 @app.route('/arctic_ocean')
 def arctic_ocean():
 
-    ifile =open(os.path.join(APP_ROOT,'arctic_ocean.json'))
+    ifile =open(os.path.join(APP_ROOT,'static','arctic_ocean.json'))
     posts = json.load(ifile)
     ifile.close()
     pname = 'arctic_ocean'
@@ -38,7 +38,7 @@ def arctic_ocean():
 @app.route('/glacier')
 def glacier():
 
-    ifile =open(os.path.join(APP_ROOT,'glacier.json'))
+    ifile =open(os.path.join(APP_ROOT,'static','glacier.json'))
     posts = json.load(ifile)
     ifile.close()
     pname = 'glacier'
@@ -52,7 +52,7 @@ def glacier():
 @app.route('/climate_sensitivity')
 def climate_sensitivity():
 
-    ifile =open(os.path.join(APP_ROOT,'climate_sensitivity.json'))
+    ifile =open(os.path.join(APP_ROOT,'static','climate_sensitivity.json'))
     posts = json.load(ifile)
     ifile.close()
     pname = 'climate_sensitivity'
