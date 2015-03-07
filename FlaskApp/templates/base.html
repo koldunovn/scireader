@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% if title %}
-    <title>Publications by keyword {{ title }}</title>
+    <title>Scireader:{{ title }}</title>
     {% else %}
-    <title>PubKey</title>
+    <title>Scireader</title>
     {% endif %}
   </head>
   <body>
   <div class="container">
 
-    <div>Microblog: <a href="/index">Home</a></div>
+    <div>Scireader: <a href="/index">Home</a></div>
     <hr>
 <ul class="nav nav-pills">
   <li role="presentation" {% if pname == 'sea_ice' %} class="active" {% endif %}><a href="/index">Sea ice</a></li>
