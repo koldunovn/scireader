@@ -26,6 +26,11 @@ def add_journal(rss, journal):
     print(journal)
 
     a = fp.parse(rss)
+    print(str(len(a['entries']))+" entries retrieved")
+
+    added_new = 0
+    skipped   = 0
+
     for m in  a['entries']:
         if m.has_key('summary'):
             have_abstract=True
@@ -43,7 +48,7 @@ def add_journal(rss, journal):
             
     
         ttitle = const_dict['title']
-        print(ttitle)
+        #print(ttitle)
         #print const_dict
         #check if we have already a record with this title
         bb = posts.find({'title':ttitle})
@@ -51,9 +56,13 @@ def add_journal(rss, journal):
             #if not, just add new post
             #print('add new post')
             posts.insert(const_dict)
+            added_new = added_new+1
         else:
             #print('skip')
+            skipped = skipped+1
             pass
+    print('added '+str(added_new)+' records')
+    print('skipped '+str(skipped)+' records')
 
 
 def find_terms(terms,outfile):

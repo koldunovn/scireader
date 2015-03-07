@@ -41,7 +41,7 @@
 }, 
 {
 "name": "Monthly Weather Review", 
-"rss": "http://journals.ametsoc.org/action/showFeed?type=etoc&feed=rss&jc=mwr"
+"rss": "http://journals.ametsoc.org/action/showFeed?type=etoc&feed=rss&jc=mwre"
 }, 
 {
 "name": "Ocean Science Discussions", 
@@ -53,7 +53,7 @@
 }, 
 {
 "name": "Atmospheric Chemistry and Physics Discussions", 
-"rss": "http://www.atmos-chem-phys-discuss.net/xml/rss2_0.xm"
+"rss": "http://www.atmos-chem-phys-discuss.net/xml/rss2_0.xml"
 }, 
 {
 "name": "Atmospheric Chemistry and Physics", 
@@ -65,7 +65,7 @@
 }, 
 {
 "name": "Earth System Dynamics", 
-"rss": "http://www.earth-syst-dynam.net/xml/rss2_0.xm"
+"rss": "http://www.earth-syst-dynam.net/xml/rss2_0.xml"
 }, 
 {
 "name": "The Cryosphere Discussions", 
@@ -105,7 +105,7 @@
 }, 
 {
 "name": "Ocean Modelling", 
-"rss": "http://rss.sciencedirect.com/publication/science/1463500"
+"rss": "http://rss.sciencedirect.com/publication/science/14635003"
 }, 
 {
 "name": "Progress in Oceanography", 
