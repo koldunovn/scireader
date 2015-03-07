@@ -49,13 +49,13 @@ def glacier():
                            posts=posts,
                            pname=pname)
 
-@app.route('/climate_sensitivity')
-def climate_sensitivity():
+@app.route('/sea_level')
+def sea_level():
 
-    ifile =open(os.path.join(APP_ROOT,'static','climate_sensitivity.json'))
+    ifile =open(os.path.join(APP_ROOT,'static','sea_level.json'))
     posts = json.load(ifile)
     ifile.close()
-    pname = 'climate_sensitivity'
+    pname = 'sea level'
 
     return render_template('index.html',
                            title='Climate Sensitivity',

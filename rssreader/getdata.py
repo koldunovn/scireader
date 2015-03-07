@@ -62,7 +62,7 @@ def add_journal(rss, journal):
             skipped = skipped+1
             pass
     print('added '+str(added_new)+' records')
-    print('skipped '+str(skipped)+' records')
+    print('skipped '+str(skipped)+' records\n')
 
 
 def find_terms(terms,outfile):
