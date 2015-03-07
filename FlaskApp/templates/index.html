@@ -1,0 +1,19 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="list-group">
+  
+    {% for post in posts %}
+        <a href="{{ post.href }}" class="list-group-item">
+        <h4 class="list-group-item-heading">{{ post.title }}</h4>
+        <p class="list-group-item-text">{{ post.source }}, {{ post.delta }} days</p>
+       </a>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
+
+

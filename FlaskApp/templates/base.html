@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% if title %}
+    <title>Publications by keyword {{ title }}</title>
+    {% else %}
+    <title>PubKey</title>
+    {% endif %}
+  </head>
+  <body>
+  <div class="container">
+
+    <div>Microblog: <a href="/index">Home</a></div>
+    <hr>
+<ul class="nav nav-pills">
+  <li role="presentation" {% if pname == 'sea_ice' %} class="active" {% endif %}><a href="/index">Sea ice</a></li>
+  <li role="presentation" {% if pname == 'arctic_ocean' %} class="active" {% endif %} ><a href="/arctic_ocean">Arctic Ocean</a></li>
+  <li role="presentation" {% if pname == 'glacier' %} class="active" {% endif %} ><a href="/glacier">Glacier</a></li>
+  <li role="presentation" {% if pname == 'climate_sensitivity' %} class="active" {% endif %} ><a href="/climate_sensitivity">Climate Sens.</a></li>
+</ul>
+
+
+{% block content %}{% endblock %}
+
+
+   </div> 
+    
+    
+  </body>
+</html>
