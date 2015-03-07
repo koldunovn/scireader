@@ -3,7 +3,7 @@
 
 import feedparser as fp
 from time import mktime
-from datetime import datetime
+from datetime import datetime, timedelta
 import pymongo
 from pymongo import MongoClient
 import json
@@ -58,8 +58,12 @@ def add_journal(rss, journal):
 
 def find_terms(terms,outfile):
     
+    tdel = timedelta(70)
+    now = datetime.now()
+    d = now-tdel
+
     json_docs = []
-    vv = posts.find({'$text': {'$search': terms }}).sort("time",pymongo.DESCENDING)
+    vv = posts.find({'$text': {'$search': terms }, "time": {"$gt": d}}).sort("time",pymongo.DESCENDING)
     for doc in vv:
         delt = datetime.now() - doc['time']
         doc['delta']=delt.days
