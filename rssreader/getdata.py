@@ -10,6 +10,15 @@ import json
 from bson import json_util
 import os
 import re
+import logging
+
+if not os.path.exists('./log'):
+    os.makedirs('./log')
+
+logging.basicConfig(filename='./log/getdata.log',level=logging.DEBUG, format='%(asctime)s %(message)s')
+logging.getLogger().addHandler(logging.StreamHandler())
+
+logging.info('Begin database update')
 
 client = MongoClient()
 db = client.journals
@@ -23,10 +32,10 @@ def add_journal(rss, journal):
         rss - rss feed
         journal - name of the journal
     '''
-    print(journal)
+    logging.info(journal)
 
     a = fp.parse(rss)
-    print(str(len(a['entries']))+" entries retrieved")
+    logging.info(str(len(a['entries']))+" entries retrieved")
 
     added_new = 0
     skipped   = 0
@@ -61,8 +70,8 @@ def add_journal(rss, journal):
             #print('skip')
             skipped = skipped+1
             pass
-    print('added '+str(added_new)+' records')
-    print('skipped '+str(skipped)+' records\n')
+    logging.info('added '+str(added_new)+' records')
+    logging.info('skipped '+str(skipped)+' records\n')
 
 
 def find_terms(terms,outfile):
