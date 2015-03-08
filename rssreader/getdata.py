@@ -12,10 +12,7 @@ import os
 import re
 import logging
 
-if not os.path.exists('./log'):
-    os.makedirs('./log')
-
-logging.basicConfig(filename='./log/getdata.log',level=logging.DEBUG, format='%(asctime)s %(message)s')
+logging.basicConfig(filename='getdata.log',level=logging.DEBUG, format='%(asctime)s %(message)s')
 logging.getLogger().addHandler(logging.StreamHandler())
 
 logging.info('Begin database update')
