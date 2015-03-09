@@ -126,5 +126,9 @@
 {
 "name": "Climatic Change", 
 "rss": "http://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=10584&channel-name=Climatic+Change"
-}
+},
+{
+"name": "Journal of Oceanography", 
+"rss": "http://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=10872&channel-name=Journal+of+Oceanography"
+},
 ]
