@@ -1,11 +1,12 @@
 from flask import Flask
 from flask import render_template, flash, json
-
+import os
 
 app = Flask(__name__)
+app.config.from_object('config')
 
-import os
 APP_ROOT = os.path.dirname(os.path.abspath(__file__)) 
+
 
 @app.route('/')
 @app.route('/index')
@@ -83,5 +84,5 @@ def journals():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
 
