@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template, flash, json, request, redirect, url_for
 import os
+from find_terms import find_terms
 
 app = Flask(__name__)
 #app.config.from_object('config')
@@ -80,9 +81,11 @@ def journals():
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
-        rres = request.form['username']
+        rres = request.form['searchphrase']
+        posts = find_terms(rres)
         return render_template('search_results.html', 
-                                rres=rres)
+                                rres=rres,
+                                posts=posts)
     
     pname = 'search'
     return render_template('search.html',
