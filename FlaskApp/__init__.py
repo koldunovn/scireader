@@ -1,12 +1,11 @@
 from flask import Flask
-from flask import render_template, flash, json
+from flask import render_template, flash, json, request, redirect, url_for
 import os
 
 app = Flask(__name__)
-app.config.from_object('config')
+#app.config.from_object('config')
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__)) 
-
 
 @app.route('/')
 @app.route('/index')
@@ -78,11 +77,26 @@ def journals():
                            journals=journals,
                            pname=pname)
 
+@app.route('/search', methods=['GET', 'POST'])
+def search():
+    if request.method == 'POST':
+        rres = request.form['username']
+        return render_template('search_results.html', 
+                                rres=rres)
+    
+    pname = 'search'
+    return render_template('search.html',
+                           title='Search',
+                           user='Nikolay',
+                           journals=journals,
+                           pname=pname)
+
+
 #@app.route('/')
 #def homepage():
 #    return "Hi there, how ya doin?"
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
