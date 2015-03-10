@@ -85,7 +85,8 @@ def search():
         posts = find_terms(rres)
         return render_template('search_results.html', 
                                 rres=rres,
-                                posts=posts)
+                                posts=posts,
+                                request=rres)
     
     pname = 'search'
     return render_template('search.html',

@@ -15,6 +15,8 @@ def find_terms(terms):
     now = datetime.now()
     d = now-tdel
 
+    print(terms)
+
     json_docs = []
     vv = posts.find({'$text': {'$search': terms }, "time": {"$gt": d}}).sort("time",pymongo.DESCENDING)
     for doc in vv:
