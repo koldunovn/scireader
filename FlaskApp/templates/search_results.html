@@ -3,7 +3,18 @@
 
 {% block content %}
 
+<form class="form-inline" action="" method="post">
+<div class="form-group">
+    <label for="exampleInputEmail1">Use "quoted text" to search for exact phrase</label>
+    
+            <p><input type=text name=searchphrase class="form-control" id="exampleInputEmail1"> 
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+</div>
+</form>
+
 <h3>Results for {{ request }}</h3>
+
 <div class="list-group">
   
     {% for post in posts %}
