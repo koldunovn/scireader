@@ -1,6 +1,6 @@
 [
 {
-"keyword": "\"sea ice\"", 
+"keyword": "\"Sea ice\"", 
 "output_file": "sea_ice.json",
 "page_name": "sea_ice",
 "index": "True"
@@ -18,9 +18,15 @@
 "index": "False"
 },
 {
-"keyword": "\"sea level\"", 
+"keyword": "\"Sea level\"", 
 "output_file": "sea_level.json",
 "page_name": "sea_level",
+"index": "False"
+},
+{
+"keyword": "\"Ocean color\"", 
+"output_file": "ocean_color.json",
+"page_name": "ocean_color",
 "index": "False"
 }
 ]

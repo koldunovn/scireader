@@ -74,6 +74,20 @@ def sea_level():
                            keywords=keywords)
 
 
+@app.route('/ocean_color')
+def ocean_color():
+    
+    ifile =open(os.path.join(APP_ROOT,'static', 'ocean_color.json'))
+    posts = json.load(ifile)
+    ifile.close()
+    pname = 'ocean_color'
+    return render_template('index.html',
+                           title="ocean_color",
+                           posts=posts,
+                           pname=pname,
+                           keywords=keywords)
+
+
 @app.route('/journals')
 def journals():
 
