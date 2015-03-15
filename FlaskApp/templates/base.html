@@ -20,10 +20,9 @@
     <h1>Scireader <small> keyword search in scientific publications</small></h1>
     </div>
 <ul class="nav nav-tabs">
-  <li role="presentation" {% if pname == 'sea_ice' %} class="active" {% endif %}><a href="/index">Sea ice</a></li>
-  <li role="presentation" {% if pname == 'arctic_ocean' %} class="active" {% endif %} ><a href="/arctic_ocean">Arctic Ocean</a></li>
-  <li role="presentation" {% if pname == 'glacier' %} class="active" {% endif %} ><a href="/glacier">Glacier</a></li>
-  <li role="presentation" {% if pname == 'sea level' %} class="active" {% endif %} ><a href="/sea_level">Sea level</a></li>
+{% for keyword in keywords %}
+  <li role="presentation" {% if pname == keyword.page_name %} class="active" {% endif %}><a href="/{{ keyword.page_name }}">{{ keyword.keyword }}</a></li>
+{% endfor %}
   <li role="presentation" {% if pname == 'journals' %} class="active" {% endif %}><a href="/journals">Journals</a></li>
   <li role="presentation" {% if pname == 'search' %} class="active" {% endif %}><a href="/search">Search</a></li>
 </ul>

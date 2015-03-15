@@ -11,64 +11,22 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 ifile = open(os.path.join(APP_ROOT,'static','keyword_list.json'))
 keywords = json.load(ifile)
 
-
-@app.route('/')
-@app.route('/index')
-@app.route('/sea_ice')
-def sea_ice():
+{% for keyword in keywords %}
+{% if keyword.index == "True" %}@app.route('/')
+@app.route('/index'){% endif %}
+@app.route('/{{ keyword.page_name }}')
+def {{ keyword.page_name }}():
     
-    ifile =open(os.path.join(APP_ROOT,'static', 'sea_ice.json'))
+    ifile =open(os.path.join(APP_ROOT,'static', '{{ keyword.output_file }}'))
     posts = json.load(ifile)
     ifile.close()
-    pname = 'sea_ice'
+    pname = '{{ keyword.page_name }}'
     return render_template('index.html',
-                           title="sea_ice",
+                           title="{{ keyword.page_name }}",
                            posts=posts,
                            pname=pname,
                            keywords=keywords)
-
-
-@app.route('/arctic_ocean')
-def arctic_ocean():
-    
-    ifile =open(os.path.join(APP_ROOT,'static', 'arctic_ocean.json'))
-    posts = json.load(ifile)
-    ifile.close()
-    pname = 'arctic_ocean'
-    return render_template('index.html',
-                           title="arctic_ocean",
-                           posts=posts,
-                           pname=pname,
-                           keywords=keywords)
-
-
-@app.route('/glacier')
-def glacier():
-    
-    ifile =open(os.path.join(APP_ROOT,'static', 'glacier.json'))
-    posts = json.load(ifile)
-    ifile.close()
-    pname = 'glacier'
-    return render_template('index.html',
-                           title="glacier",
-                           posts=posts,
-                           pname=pname,
-                           keywords=keywords)
-
-
-@app.route('/sea_level')
-def sea_level():
-    
-    ifile =open(os.path.join(APP_ROOT,'static', 'sea_level.json'))
-    posts = json.load(ifile)
-    ifile.close()
-    pname = 'sea_level'
-    return render_template('index.html',
-                           title="sea_level",
-                           posts=posts,
-                           pname=pname,
-                           keywords=keywords)
-
+{% endfor %}
 
 @app.route('/journals')
 def journals():
