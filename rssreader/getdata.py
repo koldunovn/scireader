@@ -102,11 +102,12 @@ for jrnl in jnl_list:
 
 db.posts.ensure_index([('abstract', 'text'),('title', 'text')])
 
+kfile = open('../FlaskApp/static/keyword_list.json')
+kwrd_list = json.load(kfile)
 
-find_terms("\"sea ice\"",'sea_ice.json')
-find_terms("\"arctic ocean\"",'arctic_ocean.json')
-find_terms("glacier",'glacier.json')
-find_terms("\"sea level\"",'sea_level.json')
+for keyword in kwrd_list:
+    find_terms(keyword['keyword'],keyword['output_file'])
+
 
 client.close()
 

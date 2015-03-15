@@ -1,0 +1,26 @@
+[
+{
+"keyword": "\"sea ice\"", 
+"output_file": "sea_ice.json",
+"page_name": "sea_ice",
+"index": "True"
+},
+{
+"keyword": "\"Arctic Ocean\"", 
+"output_file": "arctic_ocean.json",
+"page_name": "arctic_ocean",
+"index": "False"
+},
+{
+"keyword": "glacier", 
+"output_file": "glacier.json",
+"page_name": "glacier",
+"index": "False"
+},
+{
+"keyword": "\"sea level\"", 
+"output_file": "sea_level.json",
+"page_name": "sea_level",
+"index": "False"
+}
+]
