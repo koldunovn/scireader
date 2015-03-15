@@ -11,6 +11,10 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 ifile = open(os.path.join(APP_ROOT,'static','keyword_list.json'))
 keywords = json.load(ifile)
 
+for i, kwd in enumerate(keywords):
+    if kwd['keyword'].startswith('\"'):
+        keywords[i]['keyword'] = kwd['keyword'][1:-1]
+
 
 @app.route('/')
 @app.route('/index')
