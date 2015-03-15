@@ -23,7 +23,10 @@ This is a very simple Flask/MongoDB application, that I initially wrote for educ
 To change list of journals, just edit 
 `/FlaskApp/static/journal_list.json`
 
-To change the list of key-words, you have to edit `rssreader/getdata.py` (`find_terms` calls) and modify `/FlaskApp/__init__.py` 
+To change the list of key-words, you have to:
+ - edit `/FlaskApp/static/keyword_list.json` (one and only one of them have to have ` "index": "True"`)
+ - run `/rssreader/templates2files.py`
+ - rerun `/rssreader/getdata.py`
 
 In order to update database regularly, you have to setup cron job, that runs `rssreader/getdata.py` 
 
