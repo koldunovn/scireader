@@ -5,7 +5,7 @@ The app gets information about new publications from RSS feeds of scientific jou
 
 Example: http://178.62.254.199/
 
-This is a very simple Flask/MongoDB application, that I initially wrote for educational purposes, but that turned to be useful other people.
+This is a very simple Flask/MongoDB application, that I initially wrote for educational purposes, but that turned out to be useful other people.
 
 ## Dependencies:
 
